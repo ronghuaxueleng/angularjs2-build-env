@@ -1,0 +1,42 @@
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>第一个angularJs 2案例</title>
+
+    <!-- 1. 加载类库 -->
+    <!-- build:angular2Polyfills -->
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <!-- endbuild -->
+    <!-- build:system -->
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- endbuild -->
+    <!-- build:rx -->
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <!-- endbuild -->
+    <!-- build:angular2 -->
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <!-- endbuild -->
+
+    <!-- 2. 配置 SystemJS -->
+    <script>
+      System.config({
+        packages: {
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/boot')
+            .then(null, console.error.bind(console));
+    </script>
+
+  </head>
+
+  <!-- 3. 显示应用内容 -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
+
+</html>
