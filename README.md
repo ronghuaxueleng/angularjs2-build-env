@@ -2,6 +2,7 @@
 > 本编译环境可以将TypeScript格式的代码编译成ES5格式的代码，以便整合到php、java等非nodejs环境下运行
 
 使用方法(请先安装nodejs并安装gulp命令)：
+
 1、克隆代码：`git clone https://github.com/ronghuaxueleng/angularjs2-build-env.git`
 
 2、安装依赖：`npm install`
